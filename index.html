@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sadi's Music</title>
+<meta charset="UTF-8">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+.header h1 {
+font-size: 40px;
+}
+.navbar {
+overflow: hidden;
+background-color: black;
+}
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+.navbar a.right {
+float: right;
+}
+.navbar a:hover {
+background-color: wheat;
+color: black;
+}
+   .form {
+    max-width: 1000px;
+    padding: 20px 20px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.form legend {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+.form label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form input[type="text"],
+
+.form input[type="url"],
+
+
+.form input[type="text"]:focus,
+
+.form input[type="submit"],
+.form input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color:black;
+	margin: 0 auto;
+	background:white;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 80%;
+	border: 1px solid white;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.for input[type="submit"]:hover,
+.form input[type="button"]:hover
+{
+	background: skyblue;
+}
+
+#search {
+        margin-top: 10px;
+       
+    }
+
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+}
+
+
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width:100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>sadi music</h1>
+<p>any tracks do you want</p>
+</div>
+<div class="navbar">
+<a href="result.html">Cds</a> 
+<a href="index.html" class="right">Home Page</a>
+<input type="search" id="search" name="search" placeholder="Search for CD">
+<input type="button" value="Search" id="searchone">
+</div>
+<div class="form">
+        
+        <form action="index.html" method="post" style="left: auto">                   
+                <legend > Order Cd  </legend>
+                <input type="text" name="text1" placeholder="cd" >
+                <input type="text" name="text2" placeholder="artist">                
+                <input type="text" name="text3" placeholder="Enter the track name ">
+             <input type="submit" value="Apply">
+        </form>
+    </div>
+<div class="footer">
+<h2>sadi's&copy;music</h2>
+</div>
+</body>
+</html>
